@@ -1,0 +1,28 @@
++ ld obj/kern/kernel
+ld: warning: section `.bss' type changed to PROGBITS
++ mk obj/kern/kernel.img
+6828 decimal is XXX octal!
+Physical memory: 66556K available, base = 640K, extended = 65532K
+check_page_alloc() succeeded!
+check_page() succeeded!
+check_kern_pgdir() succeeded!
+check_page_installed_pgdir() succeeded!
+EAX=f03fd000 EBX=f03fcfa0 ECX=f03fd000 EDX=00006400
+ESI=f0180020 EDI=00000000 EBP=f0119fd8 ESP=f0119fd0
+EIP=f010334d EFL=00000016 [----AP-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0010 00000000 ffffffff 00cf9300 DPL=0 DS   [-WA]
+CS =0008 00000000 ffffffff 00cf9a00 DPL=0 CS32 [-R-]
+SS =0010 00000000 ffffffff 00cf9300 DPL=0 DS   [-WA]
+DS =0010 00000000 ffffffff 00cf9300 DPL=0 DS   [-WA]
+FS =0010 00000000 ffffffff 00cf9300 DPL=0 DS   [-WA]
+GS =0010 00000000 ffffffff 00cf9300 DPL=0 DS   [-WA]
+LDT=0000 00000000 0000ffff 00008200 DPL=0 LDT
+TR =0000 00000000 0000ffff 00008b00 DPL=0 TSS32-busy
+GDT=     00007c4c 00000017
+IDT=     00000000 000003ff
+CR0=80050033 CR2=00000040 CR3=00183000 CR4=00000000
+DR0=00000000 DR1=00000000 DR2=00000000 DR3=00000000 
+DR6=ffff0ff0 DR7=00000400
+EFER=0000000000000000
+Triple fault.  Halting for inspection via QEMU monitor.
+qemu: terminating on signal 15 from pid 74012

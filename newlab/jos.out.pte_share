@@ -1,0 +1,97 @@
++ ld obj/kern/kernel
++ mk obj/kern/kernel.img
+6828 decimal is XXX octal!
+Physical memory: 131072K available, base = 640K, extended = 130432K
+check_page_free_list() succeeded!
+check_page_alloc() succeeded!
+map region size = 8192, 2 pages
+map region size = 4096, 1 pages
+check_page() succeeded!
+map region size = 262144, 64 pages
+map region size = 126976, 31 pages
+map region size = 32768, 8 pages
+map region size = 268435456, 65536 pages
+map region size = 32768, 8 pages
+map region size = 32768, 8 pages
+map region size = 32768, 8 pages
+map region size = 32768, 8 pages
+map region size = 32768, 8 pages
+map region size = 32768, 8 pages
+map region size = 32768, 8 pages
+map region size = 32768, 8 pages
+check_kern_pgdir() succeeded!
+check_page_free_list() succeeded!
+check_page_installed_pgdir() succeeded!
+
+
+env_init finished
+
+
+trap_init finished
+SMP: CPU 0 found 1 CPU(s)
+map region size = 4096, 1 pages
+enabled interrupts: 1 2 4
+[00000000] new env 00001000
+insert page at 00200000
+insert page at 00201000
+insert page at 00202000
+insert page at 00203000
+insert page at 00204000
+insert page at 00205000
+insert page at 00206000
+insert page at 00207000
+insert page at 00208000
+insert page at 00209000
+insert page at 0020a000
+insert page at 0020b000
+insert page at 0020c000
+insert page at 00800000
+insert page at 00801000
+insert page at 00802000
+insert page at 00803000
+insert page at 00804000
+insert page at 00805000
+insert page at 00806000
+insert page at 00807000
+insert page at 00808000
+insert page at 00809000
+insert page at 0080a000
+insert page at 0080b000
+insert page at eebfd000
+[00000000] new env 00001001
+insert page at 00200000
+insert page at 00800000
+insert page at 00801000
+insert page at 00802000
+insert page at 00803000
+insert page at 00804000
+insert page at 00805000
+insert page at 00806000
+insert page at eebfd000
+[00001001] new env 00001002
+FS is running
+FS can do I/O
+Device 1 presence: 1
+block cache is good
+[00001001] user panic in <unknown> at lib/fork.c:37: pgfault not implemented
+Welcome to the JOS kernel monitor!
+Type 'help' for a list of commands.
+TRAP frame at 0xf029707c from CPU 0
+  edi  0xeebfd000
+  esi  0x0080282d
+  ebp  0xeebfffa0
+  oesp 0xefffffdc
+  ebx  0xeebfffb4
+  edx  0xeebffe58
+  ecx  0x00000001
+  eax  0x00000001
+  es   0x----0023
+  ds   0x----0023
+  trap 0x00000003 Breakpoint
+  err  0x00000000
+  eip  0x0080023a
+  cs   0x----001b
+  flag 0x00000282
+  esp  0xeebfff98
+  ss   0x----0023
+qemu: terminating on signal 15 from pid 49821
